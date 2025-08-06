@@ -14,7 +14,7 @@ The GreenLoop application now includes a moderator panel that allows authorized 
 
 A default moderator account has been configured with the following credentials:
 
-- **Email**: moderator@gl.com
+- **Email**: moderator@.gl
 - **Password**: 1234mdtt
 
 ### Creating the Moderator Account
@@ -32,18 +32,18 @@ node create-moderator.js
 
 #### Method 2: Manual Registration
 
-1. Register a new account using the GreenLoop sign-up form with the email `moderator@gl.com`
+1. Register a new account using the GreenLoop sign-up form with the email `moderator@.gl`
 2. After registration, update the user type to 'moderator' in the Supabase database:
 
 ```sql
 UPDATE profiles
 SET user_type = 'moderator'
-WHERE email = 'moderator@gl.com';
+WHERE email = 'moderator@.gl';
 ```
 
 ## Accessing the Moderator Panel
 
-1. Log in with the moderator credentials (email: moderator@gl.com, password: 1234mdtt)
+1. Log in with the moderator credentials (email: moderator@.gl, password: 1234mdtt)
 2. The application will automatically redirect you to the moderator dashboard
 
 ## Moderator Panel Features

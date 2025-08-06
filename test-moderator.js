@@ -15,7 +15,7 @@ if (!supabaseUrl || !supabaseKey) {
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 async function testModeratorLogin() {
-  const email = 'moderator@gl.com';
+  const email = 'moderator@.gl';
   const password = '1234mdtt';
   
   console.log('Testing moderator login...');

@@ -15,7 +15,7 @@ if (!supabaseUrl || !supabaseKey) {
 const supabase = createClient(supabaseUrl, supabaseKey);
 
 async function createModerator() {
-  const email = 'moderator@gl.com';
+  const email = 'moderator@.gl';
   const password = '1234mdtt';
   const name = 'System Moderator';
   
